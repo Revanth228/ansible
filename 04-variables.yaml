@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhost
+  tasks:
+  - name: printing the info
+    ansible.builtin.debug:
+     msg: "Hello i'm learning ansible from online"
