@@ -22,3 +22,13 @@
   - name: print lower case
     ansible.builtin.debug:
       msg: "{{greet | lower }}" 
+
+- name : unique-values
+  hosts: web
+  vars:
+   numbers: [1,2,2,3,3,4,44,5,55,55]
+   tasks:
+   - name: performing unique number operation
+     ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
+     
