@@ -27,8 +27,8 @@
   hosts: web
   vars:
    nums: [1,2,2,3,3,4,44,5,55,55]
-   tasks:
-   - name: performing unique number operation
-     ansible.builtin.debug:
-      msg: "{{nums | unique}}"
+  tasks:
+  - name: performing unique number operation
+    ansible.builtin.debug:
+     msg: "{{nums | unique}}"
      
