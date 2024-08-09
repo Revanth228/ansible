@@ -31,4 +31,13 @@
   - name: performing unique number operation
     ansible.builtin.debug:
      msg: "{{nums | unique}}"
+
+- name: maximum-numbers
+  hosts: web
+  vars:
+   x: [1,2,5,22,2,66,100]
+  tasks:
+  - name: print the max-value
+    ansible.builtin.debug:
+     msg: "{{x | max}}"
      
