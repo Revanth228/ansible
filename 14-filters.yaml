@@ -4,3 +4,12 @@
   - name: printing the info
     ansible.builtin.debug:
      msg: "hello i'm learning {{Course | default('Ansible')}}"
+
+- name : upper-case
+  hosts: web
+  vars:
+   greet: "Hello revanth"
+  tasks:
+  - name: print upper case
+    ansible.builtin.debug:
+     msg: "{{greet | upper }}" 
