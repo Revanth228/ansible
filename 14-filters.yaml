@@ -1,0 +1,6 @@
+- name : Working with filters
+  hosts: web
+  tasks:
+  - name: printing the info
+    ansible.builtin.debug:
+     msg: "hello i'm learning {{Course}}"
